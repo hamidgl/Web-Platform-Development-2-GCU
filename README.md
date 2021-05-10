@@ -1,4 +1,4 @@
-# Web Development 2 coursework 2 web-healthy living
+# Web Development 2 coursework 2 web-healt tracker website 
 An exercise tracker web to help student to set theirs weekly goals and workout achieviements
 
 ## Stake is
@@ -24,5 +24,6 @@ when the login successful the home page will be displayed and you able to use th
 
 - you can view the site online through this link
 https://healthy11.herokuapp.com/
+
 
 ![image](https://user-images.githubusercontent.com/73762898/117603480-1bae3f80-b14b-11eb-9de9-927bbd1b1d91.png)
