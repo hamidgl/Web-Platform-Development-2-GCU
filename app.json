@@ -1,0 +1,9 @@
+{
+"name": "Node.js Getting Started",
+"description": "A healthtracker Node.js app using Express 4",
+"repository": "https://github.com/hamidgl/CW1-GCU.git",
+"logo": "http://node-js-sample.healthreacker1.com/node.svg",
+"keywords": ["node", "express", "static"],
+"image": "heroku/nodejs"
+
+}

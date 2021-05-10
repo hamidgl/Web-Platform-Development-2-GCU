@@ -1,0 +1,40 @@
+<head>
+  {{>header}}
+</head>
+
+<body>
+
+
+  <div class="container">
+    <h2>if you starting your first session! please read our exercise video safety information before you starting</h2>
+    <hr>
+    <h4>please choice your exercise package and dont forgotten to add your achievements into the form</h4>
+    <br>
+    <h1>{{title}}</h1>
+    <div class="row">
+      {{#videos}}
+      <div class="col-sm-4">
+        <br>
+        <hr>
+        {{#package}}
+        <h4>{{package}}</h4>
+        {{/package}}
+        {{#Level}}
+        <h4>{{Level}}</h4>
+        {{/Level}}
+        {{#title}}
+        <h>{{title}}</h>
+        {{/title}}
+        {{#src}}
+        <iframe src={{src}} title="YouTube video player" frameborder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        {{/src}}
+      </div>
+      {{/videos}}
+    </div>
+  </div>
+
+</body>
+<br>
+{{>footer}}
