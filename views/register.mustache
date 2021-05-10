@@ -1,0 +1,52 @@
+<html lang="en">
+
+<meta charset="utf8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+<nav class="header navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <h1 class="brand -tiny text-white h-bg-contain m-4">Health Track</h1>
+  <ul class="navbar-nav flex-row ml-auto d-none d-sm-flex">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+    </li>
+</nav>
+<br>
+<div class="col-lg-4">
+  <div class="card -status">
+    <div class="card-body">
+      <h3 class="card-title icon-frown">
+      </h3>
+    </div>
+    <div class="card-footer bg-danger">
+      <small class="text text-white text-uppercase"> </small>
+    </div>
+  </div>
+</div>
+<br>
+
+<body class="container" style="background-color: #ec105a!important;">
+  <div class='row justify-content-md-center'>
+    <div class='col-sm-8'>
+      <h2>New User Registration form</h2>
+      <form method="POST" role="/register">
+        <div class="form-group">
+          {{user-name-error}}
+          <label for="username">User Name</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password (8 characters minimum)</label>
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter password" minlength="8"
+            required>
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary">
+    </div>
+    </form>
+    <a href="/login"></a>
+</body>
+
+</html>
+

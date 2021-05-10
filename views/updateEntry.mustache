@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+  {{>header}}
+</head>
+
+
+<div class='row justify-content-md-center'>
+  <div class='col-sm-0'>
+    <a class="btn btn-outline-success" href="./updatePage" class="link fs-sm text text-uppercase"
+      title="updatePage">Update Goal</a>
+
+    <a class="btn btn-outline-danger" href="./goal" class="link fs-sm text text-uppercase" title="goal">Add
+      exercise Goal</a>
+
+    <a class="btn btn-outline-warning" href="./entries" class="link fs-sm text text-uppercase" title="entries">View
+      Achievements </a>
+  </div>
+</div>
+<br>
+
+<body>
+  <div class="container" style="background-color:#f2c308!important">
+    <br>
+    <div class='row justify-content-md-center'>
+      <div class='col-sm-8'>
+        <h3> Will done now you can update your goals and save! </h3>
+        <br>
+
+        <form method="post" action="/update">
+          <div class="form-group" style=>
+            <button type="button" class="btn btn-info btn-sm btn-only-icon-mobile icon-pencil" data-toggle="modal"
+              data-target="#modal-edit">
+              <label for="name"> Choose an exercise: </label>
+              <select name="username" id="namename">
+                <option value="Running"> Running </option>
+                <option value="Walking"> Walking </option>
+                <option value="Cycling"> Cycling </option>
+                <option value="Zomba"> Zomba </option>
+                <option value="PushPu"> PushUP </option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label for="author">author</label>
+            <input type="text" class="form-control" id="author" name="author" placeholder="Enter your username"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="goal">Goal</label>
+            <input type="text" class="form-control" id="goal" name="goal" placeholder="Enter a training goal"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="contents">current</label>
+            <input type="text" class="form-control" id="contents" name="contents"
+              placeholder="Enter your current progress here" required />
+          </div>
+
+
+          <div class="form-group">
+            <label for="date">Date: </label>
+            <input type="date" class="form-control" id="date" name="date" required>
+          </div>
+
+          <div class="text-right">
+            <button type="submit" class="btn btn-success">Save</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<br>
+{{>footer}}

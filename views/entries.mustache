@@ -1,0 +1,129 @@
+<head>
+  {{>header}}
+</head>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<body>
+  <div class='row justify-content-md-center'>
+    <div class='col-sm-'>
+      <a class="btn btn-outline-success" href="./updatePage" class="link fs-sm text text-uppercase"
+        title="updatePage">Update Goal</a>
+
+      <a class="btn btn-outline-danger" href="./goal" class="link fs-sm text text-uppercase" title="goal">Add
+        exercise Goal</a>
+
+      <a class="btn btn-outline-warning" href="./entries" class="link fs-sm text text-uppercase" title="entries">View
+        Achievements </a>
+    </div>
+  </div>
+
+  <br>
+  <div class="container" style="background-color: #ec105a">
+
+    <p>please track your goals, and incomplete training also able to share with friend by clicking share arrow !</p>
+
+    <style>
+      table {
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid rgba(229, 231, 235, 0.692);
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 16px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2
+      }
+
+      h6 {
+        display: inline-block;
+        margin-right: 10px
+      }
+    </style>
+
+    {{#entries}}
+    <div class="card body p-3">
+      {{#author}}
+      <h3 class="card-title mb-0">Here is You Workout Goals </h3>
+      <div class="card-body" style="text-align: initial; padding-top: 0;">
+        Author <a href="/posts/{{author}}">{{author}}</a> , date of written {{published}}
+
+        <div class="mb-3">
+          <h6>Name of participant:</h6> {{author}}
+        </div>
+      </div>
+      {{/author}}
+
+
+      {{#goal}}
+      <div class="mb-3">
+        <a href='/delete/{{_id}}' alt='delete this entry'> </a>
+        <h6>Exercise participant in:</h6> {{ goal }}
+      </div>
+      {{/goal}}
+
+      {{#contents}}
+      <div class="mb-3">
+        <h6>Distance for Exercised:</h6> {{ contents }}
+      </div>
+      {{/contents}}
+
+      {{#calories}}
+      <div class="mb-3">
+
+        <h6>calories counted:</h6> {{calories }}
+      </div>
+      {{/calories}}
+
+      {{#durations}}
+      <div class="mb-3">
+        <h6>Exercise Time Duration:</h6> {{durations}}
+      </div>
+      {{/durations}}
+
+      {{#date}}
+      <div class="mb-3">
+        <div>
+          <h6>Date of the Goal Entry:</h6> {{date}}
+        </div>
+        {{/date}}
+      </div>
+
+      {{#completed}}
+      <div class="mb-3">
+      </div>
+      <h6>Exercise Achieved? </h6> {{completed}}
+    </div>
+    {{/completed}}
+    <div class="card-footer bg-warning">
+      <small class="text text-white text-uppercase"></small>
+    </div>
+    <div>
+      <a href='/delete/{{_id}}' alt='delete this entry'>
+        <input type="submit" value="Delete" class="btn btn-primary"
+          style='font-size:20px;color:rgb(172, 44, 44)'></i></a>
+
+      <a href='/updatePage' alt='update this entry'>
+        <input type="submit" value="Edit" class="btn btn-primary" style='font-size:20px;color:#f2f2f2'></i></a>
+
+      <a href='/profile' alt='update this entry'>
+        <input type="submit" value="Share" class="btn btn-primary" style='font-size:20px;color:#f2f2f2'></i></a>
+      <a href='/updatePage' alt='update this entry'></a>
+    </div>
+
+
+
+
+    {{/entries}}
+    {{^entries}}
+    No entries yet
+    {{/entries}}
+
+
+</body>
+

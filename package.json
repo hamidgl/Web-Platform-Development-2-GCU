@@ -1,0 +1,46 @@
+{
+  "name": "cou-wc2",
+  "version": "1.0.0",
+  "description": "node.js express with nedb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidgl"
+  },
+  "keywords": [
+    "node.js",
+    "express.",
+    "nedb"
+  ],
+  "author": "HA",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "datastore": "^1.8.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "i": "^0.3.6",
+    "local": "^0.3.3",
+    "method-override": "^3.0.0",
+    "mustache": "^4.1.0",
+    "mustache-express": "^1.3.0",
+    "nedb": "^1.8.0",
+    "params": "^0.1.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "response": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "notenv": "^2.0.3"
+  }
+}

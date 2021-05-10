@@ -1,0 +1,102 @@
+<html lang="eng">
+
+<head>
+  {{>header}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+
+</head>
+
+
+
+<div class='row justify-content-md-center'>
+  <div class='col-sm-0'>
+    <a class="btn btn-outline-success" href="./updatePage" class="link fs-sm text text-uppercase"
+      title="updatePage">Update Goal</a>
+
+    <a class="btn btn-outline-danger" href="./goal" class="link fs-sm text text-uppercase" title="goal">Add
+      exercise Goal</a>
+
+    <a class="btn btn-outline-warning" href="./entries" class="link fs-sm text text-uppercase" title="entries">View
+      Achievements </a>
+  </div>
+</div>
+<br>
+
+<body>
+  <div class="container" style="background-color:#28b538!important">
+    <br>
+    <div class='row justify-content-md-center'>
+      <div class='col-sm-8'>
+        <h3>please insert your exercise goals into the achievements plan </h3>
+        <br>
+        <form method="post" role="form" action="">
+          <div class="form-group" style=>
+            <label for="name"> Choose an exercise: </label>
+            <select name="username" id="namename">
+              <option value="Running"> Running </option>
+              <option value="Walking"> Walking </option>
+              <option value="Cycling"> Cycling </option>
+              <option value="Zomba"> Zomba </option>
+              <option value="PushPu"> PushUP </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="author">author</label>
+            <input type="text" class="form-control" id="author" name="author" placeholder="Enter your username"
+              required>
+
+          </div>
+
+          <div class="form-group">
+            <label for="goal">Calories</label>
+            <input type="text" class="form-control" id="calories" name="calories" placeholder="Enter a counted calories"
+              required placeholder="Enter a training calories" required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="goal">Goal</label>
+            <input type="text" class="form-control" id="goal" name="goal" placeholder="Enter a training goal"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="durations">durations</label>
+            <input type="text" class="form-control" id="durations" name="durations"
+              placeholder="Enter a training durations" required />
+          </div>
+
+          <div class="form-group">
+            <label for="contents">current</label>
+            <input type="text" class="form-control" id="contents" name="contents"
+              placeholder="Enter your current progress here" required />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date: </label>
+
+            <input type="date" class="form-control" id="date" name="date" required>
+          </div>
+
+          <br>
+          <div class="form-group">
+            <p><strong>completed: </p></strong>
+            <label for="true">Yes</label>
+            <input type="radio" id="yes" name="completed" value=yes><br>
+            <label for="false">No</label>
+            <input type="radio" id="no" name="completed" value=no><br>
+          </div>
+          <br>
+
+          <input type="submit" value="Save" class="btn btn-warning">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
+<br>
+{{>footer}}

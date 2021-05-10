@@ -1,0 +1,74 @@
+<meta charset="utf8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+<nav class="header navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <h1 class="brand -tiny text-white h-bg-contain m-4">Health Track</h1>
+  <ul class="navbar-nav flex-row ml-auto d-none d-sm-flex">
+    <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarNav"></div>
+</nav>
+
+<body>
+  <main class="main" role="main">
+    <section class="section -login">
+      <div class="container-fluid h-100">
+        <article class="row h-100">
+          <div class="col-md-8 order-md-2 col-lg-6 order-lg-3 h-100">
+            <div class="d-flex align-items-center h-100">
+              <div class="section-content w-100">
+                <div class="row">
+                  <div class="col-sm-8 offset-sm-2">
+                    <h2 class="brand -default h-bg-contain mb-4">Login</h2>
+
+
+                      <div class="row mb-4">
+
+                        <form method="POST" role="/login">
+                          <div class="form-group">
+                            {{user-name-error}}
+                            <label for="username">User Name</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username"
+                              required>
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="pass" name="password" placeholder="Enter password" minlength="8"
+                              required>
+                          </div>
+                          <input type="submit" value="Sign in" class="btn btn-primary">
+                      </form>
+
+                      <div class="col-12 col-xl-7">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="remember" id="remember" value="1">
+                          <label for="remember" class="custom-control-label fs-sm text text-uppercase">Stay
+                            connected</label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-5 text-xl-right">
+                        <a href="/profile" class="link fs-sm text text-uppercase" title="Forgot password?">Forgot
+                          password?</a>
+                      </div>
+                    </div>
+
+
+                    
+                    <a href="/register" class="link fs-sm text text-uppercase"
+                      title="Don't have an account yet? Register">Don't have an account yet? Register</a>
+                      <a href="/register"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 order-md-0 col-lg-6 order-lg-0 h-100 p-0 d-none d-md-block">
+            <div class="background-area h-bg-multiply h-bg-cover w-100 h-100"
+              style="background-image: url('https://source.unsplash.com/featured?fitness,gym')"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  {{>footer}}

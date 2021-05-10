@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .justify-content-md-center {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+
+{{>header}}
+
+<div class='row justify-content-md-center'>
+  <div class='col-sm-0'>
+    <a class="btn btn-outline-success" href="./updatePage" class="link fs-sm text text-uppercase"
+      title="updatePage">Update Goal</a>
+
+    <a class="btn btn-outline-danger" href="./goal" class="link fs-sm text text-uppercase" title="goal">Add
+      exercise Goal</a>
+    <a class="btn btn-outline-warning" href="./entries" class="link fs-sm text text-uppercase" title="entries">View
+      Achievements </a>
+    <br>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <hr>
+  <article>
+    <h2>Our aims to help you to getting heathy live from COVID-19 pandemic</h2>
+    <hr>
+    <p> All of these routines count towards the recommended guidelines for weekly physical activity Regular
+      exercise has been proven to help reduce the risk of chronic illnesses such as heart disease, type 2 diabetes
+      and stroke..
+    </p>
+  </article>
+
+  <article>
+    <h2>Research shows that physical activity can also boost self-esteem, energy, mood and sleep quality:</h2> 
+    <hr>
+    <p><b>About Our video</b> Start your fitness routine with this aerobics video for beginners.
+
+      This 45-minute workout will help to improve your general fitness and help you reach a healthy weight.
+
+      If you cannot follow all the steps at first, just keep moving. You'll soon find yourself keeping up with the
+      instructor. You may want to have some water handy.
+
+      These fitness videos have been created by InstructorLive and range from 10 to 45 minutes. Please note that these
+      videos are recorded sessions of previously live webcasts.
+
+      If you like this class you may enjoy the wake up! workout or belly dancing for beginners.</p>
+  </article>
+  <article>
+    <h2>See exercise video safety information</h2>
+    <hr>
+    <li>you have any concerns about your health</li>
+    </dd>
+    <li>you are not sure if the exercises are suitable</li>
+    </dd>
+    <li>you have any pre-existing health problems or injuries, or any current symptoms</li><br>
+    </dd>
+    <p>Stop the exercise immediately and get medical help if you feel any pain or feel unwell.</p>
+
+    <hr>
+    <p>
+      This exercise video is suitable for most people, but is not tailored to any specific condition, characteristic
+      or person.
+    </p>
+
+    <p>To get advice from a GP or health professional before trying it, especially if.</p>
+
+    <p>
+      Skills Development Scotland Head of Work based Learning Quality Delivery, Karen Murray said: “It’s vital
+      that apprentices affected by the pandemic are given support to help them achieve their qualification and
+      progress on to a positive destination, whether that is on to further learning or into a new learning.
+    </p>
+    <p>
+      “The support through the Apprentice Transition Plan service will help to ensure that talent developed
+      through apprenticeships is not lost as a result of COVID.
+    </p>
+
+    <p>
+      “The Apprentice Transition Plan aims to make sure individuals have support to complete their
+      apprenticeship if they can, take the next steps and best demonstrate their achievements and transferable
+      skills to prospective your degree.”
+    </p>
+
+
+  </article>
+
+
+
+  <div class="row">
+    {{#videos}}
+    <div class="col-sm-4">
+      {{#title}}
+      <h>{{title}}</h>
+      {{/title}}
+      {{#src}}
+      <iframe src={{src}} title="YouTube video player" frameborder="8"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      {{/src}}
+    </div>
+    {{/videos}}
+
+  </div>
+</div>
+
+{{>footer}}
+
+</body>
+
+</html>
