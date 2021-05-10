@@ -9,11 +9,6 @@ may the the system ask you to install npm before you run the code, simple type n
 to execute the application type node index.js in the command line of the application 
 when the site uploaded the login page displaying and requires username and password to enter the site
 
-the username = adam &
-password = caledonian
-
-when the login successful the home page will be displayed and you able to use the site by navigeting through the navbars
-
 # MVC Application 
 - user follows links on view.
 - browser makes request.
@@ -24,6 +19,12 @@ when the login successful the home page will be displayed and you able to use th
 
 - you can view the site online through this link
 https://healthy11.herokuapp.com/
+
+## -Username = katrin
+## -Password = caledonian
+- all the pages implemented with password for security can not run the pages through the browser without login into the site.
+
+- when the login successful the home page will be displayed and you able to use the site by navigeting through the navbars
 
 
 ![image](https://user-images.githubusercontent.com/73762898/117603480-1bae3f80-b14b-11eb-9de9-927bbd1b1d91.png)
