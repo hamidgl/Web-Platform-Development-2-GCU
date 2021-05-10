@@ -4,33 +4,33 @@ const controller = require("../controllers/healthtrackerControllers");
 const auth = require("../auth/auth");
 const ensureLoggedIn = require("connect-ensure-login").ensureLoggedIn;
 
-router.get("/", controller.home_page);
+router.get("/", ensureLoggedIn("/login"),controller.home_page);
 
-router.get("/entries", controller.entries_list);
+router.get("/entries",ensureLoggedIn("/login"), controller.entries_list);
 
-router.get("/goal", controller.show_goal_entries);
+router.get("/goal",ensureLoggedIn("/login"), controller.show_goal_entries);
 
-router.post("/goal", controller.post_goal_entry);
+router.post("/goal", ensureLoggedIn("/login"),controller.post_goal_entry);
 
-router.get("/delete/:id", controller.delete_entry);
+router.get("/delete/:id", ensureLoggedIn("/login"),controller.delete_entry);
 
-router.post("/update", controller.run_update);
+router.post("/update",ensureLoggedIn("/login"), controller.run_update);
 
-router.get("/updatePage", controller.show_update);
+router.get("/updatePage", ensureLoggedIn("/login"),controller.show_update);
 
-router.get("/posts/:author", controller.show_user_entries);
+router.get("/posts/:author",ensureLoggedIn("/login"), controller.show_user_entries);
 
 //router.get("filter/:author", controller.filter_user_entries)
 
-router.get("/exercise", controller.exercise_page);
+router.get("/exercise", ensureLoggedIn("/login"),controller.exercise_page);
 
-router.get("/profile", controller.profile_page);
+router.get("/profile", ensureLoggedIn("/login"),controller.profile_page);
 
-router.get("/completed", controller.completed_goals);
+router.get("/completed", ensureLoggedIn("/login"),controller.completed_goals);
 
-router.get("/uncompleted", controller.uncompleted_goals);
+router.get("/uncompleted", ensureLoggedIn("/login"),controller.uncompleted_goals);
 
-router.get("/contact", controller.contact_page);
+router.get("/contact", ensureLoggedIn("/login"),controller.contact_page);
 
 //---------------------Loin--------------------------//
 router.get("/login", controller.show_login_page);
