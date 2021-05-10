@@ -14,7 +14,7 @@ password = caledonian
 
 when the login successful the home page will be displayed and you able to use the site by navigeting through the navbars
 
-# MVC application 
+# MVC Application 
 - user follows links on view.
 - browser makes request.
 - associated route handles request and calls controllers.
