@@ -1,7 +1,7 @@
 # Web Development 2 coursework 2 web-healthy living
 An exercise tracker web to help student to set theirs weekly goals and workout achieviements
 
-Stake is
+## Stake is
 nedb database, Express JS in an MVC structure, mustache express and bootstrap for pages styling, npm installed
 
 
@@ -15,10 +15,10 @@ password = caledonian
 when the login successful the home page will be displayed and you able to use the site by navigeting through the navbars
 
 MVC application 
--user follows links on view.
--browser makes request.
--associated route handles request and calls controllers.
--model function queries DB and returns results to controller.
--controller creates response including queried data and renders view.
+- user follows links on view.
+- browser makes request.
+- associated route handles request and calls controllers.
+- model function queries DB and returns results to controller.
+- controller creates response including queried data and renders view.
 
 ![image](https://user-images.githubusercontent.com/73762898/117603480-1bae3f80-b14b-11eb-9de9-927bbd1b1d91.png)
